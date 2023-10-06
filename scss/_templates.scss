@@ -1,0 +1,140 @@
+@import './variebles';
+
+%flex-r-ac {
+    display: flex;
+    align-items: center;
+}
+
+%flex-r-jc {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-r-ac {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-r-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-col-cc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+%colors-size {
+    width: 16px;
+    height: 16px;
+}
+
+
+@mixin link-big {
+    font-family: $ff-poppins;
+    font-size: $link-font;
+    font-style: normal;
+    font-weight: $fw-link;
+    line-height: $lh-link;
+}
+
+@mixin text_btn-gr {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    font-size: $link-font_sm;
+    font-style: normal;
+    font-weight: $fw-link;
+    line-height: $lh-link_sm;
+}
+
+@mixin text_btn-wh {
+    color: $cat_txt-col;
+    font-family: $ff-poppins;
+    font-size: $link-font_sm;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-link_sm;
+}
+
+@mixin category-title {
+    color: $cat_txt-col;
+    font-family: $ff-poppins;
+    font-size: $category-font;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-category;
+}
+
+@mixin colors-txt {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    font-size: $link-font_sm;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-link_sm;
+}
+
+@mixin prod-title {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    font-size: $product-font;
+    font-style: normal;
+    font-weight: $fw-link;
+    line-height: $lh-link;
+}
+
+@mixin prod-price {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    font-size: $link-font;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-price;
+}
+
+@mixin tab-title {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    text-align: center;
+    font-size: $category-font;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-category;
+}
+
+@mixin bunner-text {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    font-size: $link-font;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-price;
+}
+
+@mixin foot-menu-cat {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    text-align: center;
+    font-size: $category-font;
+    font-style: normal;
+    font-weight: $fw-category;
+    line-height: $lh-category;
+}
+
+@mixin foot-menu-it {
+    color: $main_txt-col;
+    font-family: $ff-poppins;
+    font-size: $product-font;
+    font-style: normal;
+    font-weight: $fw-link;
+    line-height: $lh-link;
+}

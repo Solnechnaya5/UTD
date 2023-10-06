@@ -1,0 +1,34 @@
+$breakpoints:(
+    desktop: 1920px,
+    tablet: 900px,
+    smart: 320px,
+);
+
+@mixin desktop-down{
+    @media (max-width:map-get($breakpoints, desktop) - .2px){
+        @content;
+    }
+}
+@mixin tablet-down{
+    @media (max-width:map-get($breakpoints, tablet) - .2px){
+        @content;
+    }
+}
+
+@mixin smart-down{
+    @media (max-width:map-get($breakpoints, smart) - .2px){
+        @content;
+    }
+}
+// 
+@mixin tablet{
+    @media (max-width:map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin smart{
+    @media (max-width:map-get($breakpoints, smart)){
+        @content;
+    }
+}
