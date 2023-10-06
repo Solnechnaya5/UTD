@@ -174,7 +174,7 @@ z-index: 500;
     gap: 10px;
     border-radius: 50px;
     background-color: $bg-btn_orange;
-
+flex-shrink: 0;
     &:hover {
         background: $bg-btn-hov_orange;
 
@@ -196,7 +196,7 @@ z-index: 500;
     height: 24px;
     @extend %flex-r-ac;
     margin-left: 19px;
-
+    flex-shrink: 0;
     img {
         width: 24px;
         height: 24px;
@@ -205,7 +205,11 @@ z-index: 500;
 
     span {
         @include link-big;
-
+color: $main_txt-col;
+&:hover{
+   color: #292929;
+   font-weight: 500;
+}
         @include smart {
             display: none;
         }
@@ -217,7 +221,7 @@ z-index: 500;
     @extend %flex-r-ac;
     margin-left: 24px;
     position: relative;
-
+    flex-shrink: 0;
     img {
         width: 24px;
         height: 24px;
@@ -238,7 +242,11 @@ z-index: 500;
 
     span {
         @include link-big;
-
+        color: $main_txt-col;
+        &:hover{
+            color: #292929;
+            font-weight: 500;
+        }
         @include smart {
             display: none;
         }
@@ -583,6 +591,13 @@ a{
         margin-right: 0;
 
     }
+    &:hover {
+        box-shadow: 9px 9px 17px -5px #9A9A9A;
+    }
+
+    &:focus {
+        box-shadow: 9px 9px 17px -5px #9A9A9A;
+    }
 
     @include tablet {
         width: 268px;
@@ -611,7 +626,11 @@ a{
 
     a {
         @include prod-title;
+        color: $main_txt-col;
         margin-bottom: 8px;
+        &:hover{
+            color:$link-hov_txt-col;
+        }
     }
 
     &.mint {
@@ -865,7 +884,9 @@ a{
     border-bottom: 1px solid $bord-col-tabs;
     @include tab-title;
     color: $main_txt-col;
-
+    &:hover{
+        color:$light_txt-col ;
+    }
     &:last-child {
         margin-right: 0;
     }
@@ -1223,6 +1244,9 @@ img{
         @include foot-menu-it;
         font-size: 12px;
         color: $foot-txt-col;
+        &:hover{
+            font-weight: 500;
+        }
 
         img {
             width: 16px;
